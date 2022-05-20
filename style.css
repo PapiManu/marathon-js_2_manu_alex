@@ -21,3 +21,13 @@ body{
     grid-column: 1;
     grid-row: 2;
 }
+
+#info > #meteo {
+    display: flex;
+}
+#info > #horloge {
+    font-size: 200px;
+}
+#info > #horloge > p > span {
+    font-size: 20px;
+}
