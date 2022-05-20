@@ -6,6 +6,7 @@ body{
     background-size: 100%;
 }
 #content {
+    margin: 5%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,6 +21,9 @@ body{
 #info {
     grid-column: 1;
     grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #info > #meteo {
@@ -28,6 +32,10 @@ body{
 #info > #horloge {
     font-size: 200px;
 }
+#info > #horloge > p {
+    margin: 0;
+}
 #info > #horloge > p > span {
-    font-size: 20px;
+    font-size: 48px;
+    margin-left: 20px;
 }
