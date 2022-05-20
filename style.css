@@ -1,22 +1,26 @@
 body{
     margin: 0;
     padding: 0;
-}
-#content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: white;
     background-image: url(assets/desktop/bg-image-daytime.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+#content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    color: white;
 }
 
 #p_height_page {
     grid-column: 1;
     grid-row: 1;
+    display: flex;
 }
 
 #info {
     grid-column: 1;
     grid-row: 2;
+    display: flex;
+    
 }
