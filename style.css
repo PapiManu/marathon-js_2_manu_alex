@@ -1,3 +1,4 @@
+/* --------(BAse du CSS)-------- */
 body{
     margin: 0;
     padding: 0;
@@ -23,13 +24,17 @@ body{
     grid-template-columns: 1fr 1fr;
     color: white;
 }
+/* --------------------------- */
 
+/* ---------(style pour la citation)--------- */
 #p_height_page {
     grid-column: 1;
     grid-row: 1;
     font-size: 18px;
 }
+/* ----------------------------------------------- */
 
+/* --------------(Balise de contenue)----------------- */
 #info {
     grid-column: 1;
     grid-row: 2;
@@ -37,28 +42,37 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+/* ---------------------------------------------------- */
 
-#info > #meteo {
+/* ---------------(Météo et text de politesse)------------ */
+#meteo {
     display: flex;
     font-size: 20px;
     letter-spacing:4px;
 }
-#info > #meteo > #meteo_img {
+#meteo_img {
     margin-right: 14px;
 }
-#info > #horloge {
+/* ------------------------------------------------------- */
+
+/* ----------------(Balise pour l'horloge)---------------- */
+#horloge {
     font-size: 200px;
     font-weight: bold;
 }
-#info > #horloge > p {
+#horloge > p {
     margin: 0;
 }
-#info > #horloge > p > span {
+#horloge > p > span {
     font-size: 48px;
     margin-left: 20px;
     font-weight: normal;
 }
+/* ----------------------------------------------------- */
+
+/* ---------------(Position géographique)--------------- */
 #position{
     font-size: 24px;
     font-weight: bold;
 }
+/* -------------------------------------------------- */
