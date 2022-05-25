@@ -17,7 +17,6 @@ body{
     z-index: -1;
 }
 #content {
-    margin: 5%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,6 +42,7 @@ body{
 }
 #info > #horloge {
     font-size: 200px;
+    font-weight: bold;
 }
 #info > #horloge > p {
     margin: 0;
@@ -50,4 +50,5 @@ body{
 #info > #horloge > p > span {
     font-size: 48px;
     margin-left: 20px;
+    font-weight: normal;
 }
