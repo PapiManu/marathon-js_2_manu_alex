@@ -35,11 +35,16 @@ body{
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 #info > #meteo {
     display: flex;
+    font-size: 20px;
+    letter-spacing:4px;
+}
+#info > #meteo > #meteo_img {
+    margin-right: 14px;
 }
 #info > #horloge {
     font-size: 200px;
@@ -52,4 +57,8 @@ body{
     font-size: 48px;
     margin-left: 20px;
     font-weight: normal;
+}
+#position{
+    font-size: 24px;
+    font-weight: bold;
 }
