@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-image: url(assets/desktop/bg-image-daytime.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 #content {
     margin: 5%;
@@ -16,6 +16,7 @@ body{
 #p_height_page {
     grid-column: 1;
     grid-row: 1;
+    font-size: 18px;
 }
 
 #info {
