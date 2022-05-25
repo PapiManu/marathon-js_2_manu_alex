@@ -4,6 +4,16 @@ body{
     background-image: url(assets/desktop/bg-image-daytime.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+#opacity{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
 }
 #content {
     margin: 5%;
