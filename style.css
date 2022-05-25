@@ -27,17 +27,22 @@ body{
 /* --------------------------- */
 
 /* ---------(style pour la citation)--------- */
+#height_paragraph{
+    font-size: 18px;
+}
 #p_height_page {
     grid-column: 1;
     grid-row: 1;
-    font-size: 18px;
+}
+#span_height_page{
+    font-weight: bold;
 }
 /* ----------------------------------------------- */
 
 /* --------------(Balise de contenue)----------------- */
 #info {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +69,7 @@ body{
     margin: 0;
 }
 #horloge > p > span {
-    font-size: 48px;
+    font-size: 40px;
     margin-left: 20px;
     font-weight: normal;
 }
