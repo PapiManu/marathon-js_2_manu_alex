@@ -115,7 +115,7 @@ body::after {
     background-color: #ffffffc7;
     color: black;
     display: grid;
-    grid-template-column: 1fr 2px 1fr;
+    
 }
 #left_1 {
     grid-column: 1;
