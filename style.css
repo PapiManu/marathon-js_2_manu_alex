@@ -34,6 +34,10 @@ body::after {
 /* --------------------------- */
 
 /* ---------(style pour la citation)--------- */
+#height_page {
+    margin-top:10%
+}
+
 #height_paragraph{
     font-size: 18px;
 }
