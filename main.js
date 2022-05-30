@@ -12,7 +12,7 @@ const dayOfTheWeekTitle = document.querySelector("#right_1");
 const dayOfTheWeek = document.querySelector("#jour_semaine");
 const weekNumberTitle = document.querySelector("#right_2");
 const weekNumber = document.querySelector("#semaine_année");
-
+console.log(weekNumber);
 
 //Api Heures, temps et lieu_________________________________________
 
@@ -33,31 +33,18 @@ function timeSet() {
       // Will display time in 10:30:23 format
       //let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
       let formattedTime = hours + ":" + minutes.substr(-2);
-      let abbr = data.abbreviation;
-      let continent = data.timezone;
-      let dayOftheWeek = data.day_of_week;
-      let dayOftheYear = data.day_of_year;
-      let weekNumber = data.week_number;
-      const continentContent = document.createTextNode(`${continent}`);
-      const dayOftheWeekContent = document.createTextNode(`${dayOftheWeek}`);
-      const dayOftheYearContent = document.createTextNode(`${dayOftheYear}`);
-      const weekNumberContent = document.createTextNode(`${weekNumber}`);
-
-
-
-
       
-
+      
+     
+      const continentContent = document.createTextNode(`${ data.timezone}`);
+     
       const time = document.createTextNode(`${formattedTime}`);
-      const abbreviation = document.createTextNode(`${abbr}`);
-      const curentTimezoneTitleContent
-      const curentTimezoneContent
-      const dayOfTheyearTitleContent
-      const dayOfTheyearContent
-      const dayOfTheWeekTitleContent
-      const dayOfTheWeekContent
-      const weekNumberTitleContent
-      const weekNumbeContent
+      const abbreviation = document.createTextNode(`${data.abbreviation}`);
+
+       const curentTimezoneContent=document.createTextNode(`${data.timezone}`)
+       const dayOfTheyearContent=document.createTextNode(`${data.day_of_year}`)
+       const dayOfTheWeekContent=document.createTextNode(`${data.day_of_week}`)
+       const weekNumberContent=document.createTextNode(`${data.week_number}`)
 
 
       hour.replaceChildren(time);
@@ -65,14 +52,10 @@ function timeSet() {
 
 
 
-      curentTimezoneTitle.replaceChildren(); 
-      curentTimezone.replaceChildren(); 
-      dayOfTheyearTitle.replaceChildren(); 
-      dayOfTheyear.replaceChildren(); 
-      dayOfTheWeekTitle.replaceChildren(); 
-      dayOfTheWeek.replaceChildren(); 
-      weekNumberTitle.replaceChildren(); 
-      weekNumber.replaceChildren(); 
+      curentTimezone.replaceChildren(curentTimezoneContent); 
+      dayOfTheyear.replaceChildren(dayOfTheyearContent); 
+      dayOfTheWeek.replaceChildren(dayOfTheWeekContent); 
+      weekNumber.replaceChildren(weekNumberContent); 
     })
   );
 }
