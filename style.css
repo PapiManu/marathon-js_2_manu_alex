@@ -115,6 +115,10 @@ body::after {
     background-color: #ffffffc7;
     color: black;
     display: grid;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 4badf6f75a55bf1357746d9fab07342130267ca1
 }
 #left_1 {
     grid-column: 1;
