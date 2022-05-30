@@ -15,15 +15,18 @@ const weekNumberTitle = document.querySelector("#right_2");
 const weekNumber = document.querySelector("#semaine_année");
 const more  = document.querySelector("#button");
 const divMore = document.querySelector('.more')
-const divTop = document.querySelector('#height_page')
-let scrollSize = 500;
-let scrollB
+const divTop = document.querySelector('.height_page')
+const buttonText = document.querySelector('#button >p > button')
 
+console.log(buttonText);
 more.addEventListener('click', () => {
-  cont.scrollB += scrollSize;
-  
-  
+divTop.classList.toggle('active-button')
+  divMore.classList.toggle('active-button')
+  buttonText.replaceChildren('LESS')
 })
+
+
+
 //Api Heures, temps et lieu_________________________________________
 
 function timeSet() {
