@@ -72,14 +72,20 @@ body::after {
 #horloge {
     font-size: 200px;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
 }
 #horloge > p {
     margin: 0;
+    
 }
-#horloge > p > span {
+#horloge  > span {
     font-size: 40px;
     margin-left: 20px;
     font-weight: normal;
+    display: flex;
+   align-items: flex-end;
+   margin-bottom: 40px;
 }
 /* ----------------------------------------------------- */
 

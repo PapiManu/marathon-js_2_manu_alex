@@ -1,13 +1,13 @@
 
 const hour =document.querySelector('#horloge > p')
-const hourAbbr =document.querySelector('#horloge > p > span')
+const hourAbbr =document.querySelector('#horloge > span')
 const quote =document.querySelector('#p_height_page')
 const authorQuote = document.querySelector('#span_height_page')
 const city =document.querySelector('#position p')
-console.log(hourAbbr);
 
 
-function timeSet() {
+
+ function timeSet() {
 fetch("http://worldtimeapi.org/api/ip").then((response) =>
   response.json().then((data) => {
     let unix_timestamp = (data.unixtime)
@@ -25,8 +25,8 @@ fetch("http://worldtimeapi.org/api/ip").then((response) =>
     
 
 
-    let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-     //let formattedTime = hours + ':' + minutes.substr(-2) ;
+    //let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+     let formattedTime = hours + ':' + minutes.substr(-2) ;
     
 
     
@@ -40,11 +40,12 @@ fetch("http://worldtimeapi.org/api/ip").then((response) =>
     hourAbbr.replaceChildren(abbreviation)
 
     
+console.log(hourAbbr);
 
 
+  }))
+}
 
-  }))}
-  
  
   
  setInterval(()=>{
@@ -55,7 +56,7 @@ fetch("http://worldtimeapi.org/api/ip").then((response) =>
   fetch("https://geolocation-db.com/json/").then((response) =>
     response.json().then((dataLocalisation) => {
       // let timeZone = data.timezone
-      console.log(dataLocalisation);
+      
       const timeZoneText = document.createTextNode(`${dataLocalisation.city},${dataLocalisation.country_code}`);
       city.replaceChildren(timeZoneText)
 
