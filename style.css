@@ -113,12 +113,10 @@ body::after {
     grid-column: span 2;
     grid-row: span 3;
     background-color: #ffffffc7;
+    backdrop-filter: blur(20px);
     color: black;
     display: grid;
-<<<<<<< HEAD
-=======
-    
->>>>>>> 4badf6f75a55bf1357746d9fab07342130267ca1
+    padding: 10%;
 }
 #left_1 {
     grid-column: 1;
@@ -129,11 +127,11 @@ body::after {
     grid-row: 3;
 }
 #right_1 {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
 }
 #right_2 {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 3;
 }
 #position_geographique {
@@ -145,11 +143,11 @@ body::after {
     grid-row: 4;
 }
 #jour_semaine {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 2;
 }
-#semain_année {
-    grid-column: 2;
+#semaine_année {
+    grid-column: 3;
     grid-row: 4;
 }
 
@@ -160,4 +158,9 @@ body::after {
 }
 .font_2 {
     font-size: 15px;
+}
+#decoration_more{
+    grid-column: 2;
+    grid-row: span 4;
+    border-left: 1px solid #303030;
 }
