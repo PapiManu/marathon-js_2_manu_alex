@@ -108,7 +108,16 @@ body::after {
     justify-content: flex-end;
     margin-bottom: 40px;
 }
-
+button {
+    padding: 20px 60px 20px 20px;
+    border-radius: 28px;
+    letter-spacing: 5px;
+}
+#button > img {
+    position: relative;
+    right: 50px;
+    bottom: 26px;
+}
 #more {
     grid-column: span 2;
     grid-row: span 3;
