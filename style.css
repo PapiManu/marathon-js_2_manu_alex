@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    /* overflow: hidden; */
 }
 body::after {
     content: "";
@@ -27,6 +28,8 @@ body::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 /* --------------------------- */
 
@@ -46,10 +49,11 @@ body::after {
 /* --------------(Balise de contenue)----------------- */
 #info {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 10%;
 }
 /* ---------------------------------------------------- */
 
@@ -85,3 +89,12 @@ body::after {
     font-weight: bold;
 }
 /* -------------------------------------------------- */
+
+#button {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
