@@ -24,7 +24,7 @@ body::after {
 }
 
 #content {
-    height: 100vh;
+     height: 100vh; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
@@ -118,7 +118,8 @@ button {
     right: 50px;
     bottom: 26px;
 }
-#more {
+.more {
+    
     grid-column: span 2;
     grid-row: span 3;
     background-color: #ffffffc7;
@@ -126,6 +127,9 @@ button {
     color: black;
     display: grid;
     padding: 10%;
+}
+.more.active-button {
+    display: grid;
 }
 #left_1 {
     grid-column: 1;

@@ -4,6 +4,7 @@ const quote = document.querySelector("#p_height_page");
 const authorQuote = document.querySelector("#span_height_page");
 const city = document.querySelector("#position p");
 
+const cont =document.querySelector("body");
 const curentTimezoneTitle = document.querySelector("#left_1");
 const curentTimezone = document.querySelector("#position_geographique");
 const dayOfTheyearTitle = document.querySelector("#left_2");
@@ -12,8 +13,17 @@ const dayOfTheWeekTitle = document.querySelector("#right_1");
 const dayOfTheWeek = document.querySelector("#jour_semaine");
 const weekNumberTitle = document.querySelector("#right_2");
 const weekNumber = document.querySelector("#semaine_année");
-console.log(weekNumber);
+const more  = document.querySelector("#button");
+const divMore = document.querySelector('.more')
+const divTop = document.querySelector('#height_page')
+let scrollSize = 500;
+let scrollB
 
+more.addEventListener('click', () => {
+  cont.scrollB += scrollSize;
+  
+  
+})
 //Api Heures, temps et lieu_________________________________________
 
 function timeSet() {
