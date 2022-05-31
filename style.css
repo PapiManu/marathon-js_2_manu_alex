@@ -30,9 +30,8 @@ body::after {
   grid-template-rows: 1fr 1fr;
 
   color: white;
-  /* margin-left: 10%;
-    margin-right: 10%; */
-  /* overflow: hidden; */
+    margin-left: 10%;
+    margin-right: 10%;
 }
 /* --------------------------- */
 
@@ -173,7 +172,7 @@ body::after {
 }
 .height_page.active-button {
   /* display: none; */
-  transform: translateX(-100%) ;
+  transform: translateX(-120%) ;
 }
 .button-look.active-button {
   margin-bottom: 500px;
