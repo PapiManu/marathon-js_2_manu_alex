@@ -24,9 +24,11 @@ body::after {
 
 #content {
   height: 100vh;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+
   color: white;
     margin-left: 10%;
     margin-right: 10%;
@@ -35,7 +37,7 @@ body::after {
 
 /* ---------(style pour la citation)--------- */
 .height_page {
-  margin-top: 10%;
+  margin-top: 0;
   margin-left: 10%;
   margin-right: 10%;
   transition: transform 2s ease-in-out;
