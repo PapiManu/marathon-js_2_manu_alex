@@ -59,6 +59,14 @@ body::after {
 #span_height_page {
   font-weight: bold;
 }
+
+.button_refresh {
+  background-color: rgba(0, 0, 0, 0);
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  margin-left:14px
+}
 /* ----------------------------------------------- */
 
 /* --------------(Balise de contenue)----------------- */
