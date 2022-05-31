@@ -13,16 +13,29 @@ const dayOfTheWeekTitle = document.querySelector("#right_1");
 const dayOfTheWeek = document.querySelector("#jour_semaine");
 const weekNumberTitle = document.querySelector("#right_2");
 const weekNumber = document.querySelector("#semaine_année");
-const more  = document.querySelector("#button");
-const divMore = document.querySelector('.more')
-const divTop = document.querySelector('.height_page')
-const buttonText = document.querySelector('#button >p > button')
 
-console.log(buttonText);
-more.addEventListener('click', () => {
-divTop.classList.toggle('active-button')
+const more  = document.querySelector(".button-look");
+const divMore = document.querySelector('.more-transition')
+const divTop = document.querySelector('.height_page')
+const buttonText = document.querySelector('.button-look > p > button')
+const buttonLogo = document.querySelector('.img-fleche')
+const info = document.querySelector('.info-grid')
+console.log(buttonLogo);
+i=0
+more.addEventListener('click', () => { 
+  i++
+  more.classList.toggle('active-button')
+  divTop.classList.toggle('active-button')
   divMore.classList.toggle('active-button')
+  info.classList.toggle('active-button')
+  buttonLogo.classList.toggle('active-button')
+ if (i % 2 !== 0){
   buttonText.replaceChildren('LESS')
+ }else{
+  buttonText.replaceChildren('MORE')
+
+ }
+  
 })
 
 
