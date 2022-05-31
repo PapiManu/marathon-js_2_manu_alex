@@ -20,9 +20,9 @@ const buttonText = document.querySelector(".button-look > p > button");
 const buttonLogo = document.querySelector(".img-fleche");
 const info = document.querySelector(".info-grid");
 const refresh =document.querySelector('.button_refresh')
+const messageGently=document.querySelector('#messageGently')
 
-
-console.log(buttonLogo);
+console.log(messageGently);
 i = 0;
 more.addEventListener("click", () => {
   i++;
@@ -43,6 +43,7 @@ more.addEventListener("click", () => {
 function timeSet() {
   fetch("http://worldtimeapi.org/api/ip").then((response) =>
     response.json().then((data) => {
+
       let unix_timestamp = data.unixtime;
       // Create a new JavaScript Date object based on the timestamp
       // multiplied by 1000 so that the argument is in milliseconds, not seconds.
@@ -53,7 +54,7 @@ function timeSet() {
       var minutes = "0" + date.getMinutes();
       // Seconds part from the timestamp
       var seconds = "0" + date.getSeconds();
-      console.log(data);
+      console.log(hours);
       // Will display time in 10:30:23 format
       //let formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
       let formattedTime = hours + ":" + minutes.substr(-2);
@@ -75,10 +76,29 @@ function timeSet() {
       hour.replaceChildren(time);
       hourAbbr.replaceChildren(abbreviation);
 
+      
       curentTimezone.replaceChildren(curentTimezoneContent);
       dayOfTheyear.replaceChildren(dayOfTheyearContent);
       dayOfTheWeek.replaceChildren(dayOfTheWeekContent);
       weekNumber.replaceChildren(weekNumberContent);
+
+      if(hours >= 05 && hours < 12 ) {
+        console.log("it is the night");
+        messageGently.replaceChildren('GOOD MORNING, IT’S CURRENTLY')
+
+
+      }else if(hours >= 12 && hours < 17 ){
+        console.log("it is the day");
+        messageGently.replaceChildren('GOOD AFTERNOON, IT’S CURRENTLY')
+
+      }else {
+        messageGently.replaceChildren('GOOD EVENING, IT’S CURRENTLY')
+
+      }
+
+      // "Good morning" between 5am and 12pm
+      // - "Good afternoon" between 12pm and 6pm
+      // - "Good evening" between 6pm and 5am
     })
   );
 }
