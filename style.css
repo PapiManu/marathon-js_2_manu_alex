@@ -9,7 +9,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-     /* overflow: hidden;  */
+     overflow: hidden; 
 }
 body::after {
     content: "";
@@ -28,9 +28,12 @@ body::after {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+    
     color: white;
     /* margin-left: 10%;
     margin-right: 10%; */
+    /* overflow: hidden; */
 }
 /* --------------------------- */
 
@@ -54,9 +57,8 @@ body::after {
 /* ----------------------------------------------- */
 
 /* --------------(Balise de contenue)----------------- */
-#info {
-    grid-column: 1;
-    grid-row: 2;
+.info-grid {
+   grid-area: 2/1/3/2;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -105,9 +107,8 @@ body::after {
 }
 /* -------------------------------------------------- */
 
-#button {
-    grid-column: 2;
-    grid-row: 2;
+.button-look{
+    grid-area: 2/2/3/3;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -120,38 +121,57 @@ button {
     cursor: pointer;
 }
 
-#button > img {
+.img-fleche{
     position: relative;
     right: 50px;
     bottom: 26px;
     pointer-events: none;
+    transition: transform 1.5s;
 }
 button:hover .img {
     opacity: 20%;
 }
+
+
+.more-transition {
+position: relative;
+width: 100vw;
+bottom: 0;
+transition: transform 2s ;
+/* backdrop-filter: blur(20px); */
+
+}
 .more {
-    
-    grid-column: span 2;
-    grid-row: span 3;
+
     background-color: #ffffffc7;
-    backdrop-filter: blur(20px);
+    
     color: black;
-    display: none;
-  
-    
+    display: grid;
+    transition: transform ease-in-out;
     padding: 50px 200px 50px 200px;
-    
+  
+
    
 }
-.more.active-button {
-    display: grid;
-   transition: cubic-bezier(.17,.67,.83,.67)
-   
+.img-fleche.active-button {
+    transform: rotate(180deg);
+ 
+}
+.info-grid.active-button {
+    grid-area: 1/1/2/2;
+    margin-top: 96px;
+
+}
+.more-transition.active-button {
+    
+transform: translateY(-100%);  
 }
 .height_page.active-button {
     display: none;
 }
-
+.button-look.active-button {
+    grid-area: 1/2/2/3;
+}
 #left_1 {
     grid-column: 1;
     grid-row: 1;
