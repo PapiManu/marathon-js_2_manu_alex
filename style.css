@@ -116,7 +116,7 @@ body::after {
   margin-bottom: 40px;
   transition: margin 2s ease;
 }
-button {
+#button_more {
   padding: 20px 60px 20px 20px;
   border-radius: 28px;
   letter-spacing: 5px;
@@ -130,7 +130,7 @@ button {
   pointer-events: none;
   transition: transform 1.5s;
 }
-button:hover .img {
+#button_.more .img {
   opacity: 20%;
 }
 
