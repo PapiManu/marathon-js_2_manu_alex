@@ -21,6 +21,9 @@ const buttonLogo = document.querySelector(".img-fleche");
 const info = document.querySelector(".info-grid");
 const refresh =document.querySelector('.button_refresh')
 const messageGently=document.querySelector('#messageGently')
+const logoGently=document.querySelector('#meteo_img > p > img')
+
+
 
 console.log(messageGently);
 i = 0;
@@ -85,15 +88,18 @@ function timeSet() {
       if(hours >= 05 && hours < 12 ) {
         console.log("it is the night");
         messageGently.replaceChildren('GOOD MORNING, IT’S CURRENTLY')
-
-
+        logoGently.src="/assets/desktop/icon-moon.svg";
+        cont.style.backgroundImage="url(/assets/desktop/bg-image-daytime.jpg)"
       }else if(hours >= 12 && hours < 17 ){
         console.log("it is the day");
         messageGently.replaceChildren('GOOD AFTERNOON, IT’S CURRENTLY')
+        logoGently.src="/assets/desktop/icon-sun.svg";
+        cont.style.backgroundImage="url(/assets/desktop/bg-image-daytime.jpg)"
 
       }else {
         messageGently.replaceChildren('GOOD EVENING, IT’S CURRENTLY')
-
+        logoGently.src="/assets/desktop/icon-moon.svg";
+        cont.style.backgroundImage="url(/assets/desktop/bg-image-nighttime.jpg)"
       }
 
       // "Good morning" between 5am and 12pm
