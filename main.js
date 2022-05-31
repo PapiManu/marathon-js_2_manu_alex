@@ -20,6 +20,9 @@ const divTop = document.querySelector(".height_page");
 const buttonText = document.querySelector(".button-look > p > button");
 const buttonLogo = document.querySelector(".img-fleche");
 const info = document.querySelector(".info-grid");
+const refresh =document.querySelector('.button_refresh')
+
+
 console.log(buttonLogo);
 i = 0;
 more.addEventListener("click", () => {
@@ -101,15 +104,26 @@ fetch("https://geolocation-db.com/json/").then((response) =>
 //_____________________________________________________________________
 
 //Api Citation_____________________________________________________
-
+function refreshButton() {
 fetch("https://api.quotable.io/random").then((response) =>
   response.json().then((dataQuote) => {
     let quoteAuthor = dataQuote.author;
     let quoteRandom = dataQuote.content;
     const quoteRandomText = document.createTextNode(`${quoteRandom}`);
     const quoteAuthorText = document.createTextNode(`${quoteAuthor}`);
-    quote.appendChild(quoteRandomText);
-    authorQuote.appendChild(quoteAuthorText);
+    quote.replaceChildren(quoteRandomText);
+    authorQuote.replaceChildren(quoteAuthorText);
   })
 );
+}
+
+ refreshButton()
+
+ refresh.addEventListener('click', () => {
+ 
+  
+   refreshButton();
+ })
+ 
+
 //_____________________________________________________________________
