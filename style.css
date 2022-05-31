@@ -145,6 +145,10 @@ body::after {
   bottom: 26px;
   pointer-events: none;
   transition: transform 1.5s;
+  fill: black;
+}
+#button_more:hover {
+ color: #b6aeae;
 }
 #button_.more .img {
   opacity: 20%;
@@ -164,8 +168,10 @@ body::after {
   transition: transform ease-in-out;
   padding: 50px 200px 50px 200px;
 }
+
 .img-fleche.active-button {
   transform: rotate(180deg);
+
 }
 .info-grid.active-button {
   margin-bottom: 500px;
