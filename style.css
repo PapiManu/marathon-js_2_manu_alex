@@ -9,7 +9,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    /* overflow: hidden; */
+     /* overflow: hidden;  */
 }
 body::after {
     content: "";
@@ -24,21 +24,24 @@ body::after {
 }
 
 #content {
-    height: 100vh;
+     height: 100vh; 
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
 }
 /* --------------------------- */
 
 /* ---------(style pour la citation)--------- */
-#height_page {
-    margin-top:10%
+.height_page {
+    margin-top:10%;
+     margin-left: 10%;
+    margin-right: 10%; 
 }
 
-#height_paragraph{
+.height_paragraph{
     font-size: 18px;
 }
 #p_height_page {
@@ -58,6 +61,8 @@ body::after {
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%; 
 }
 /* ---------------------------------------------------- */
 
@@ -124,15 +129,29 @@ button {
 button:hover .img {
     opacity: 20%;
 }
-#more {
+.more {
+    
     grid-column: span 2;
     grid-row: span 3;
     background-color: #ffffffc7;
     backdrop-filter: blur(20px);
     color: black;
-    display: grid;
-    padding: 10%;
+    display: none;
+  
+    
+    padding: 50px 200px 50px 200px;
+    
+   
 }
+.more.active-button {
+    display: grid;
+   transition: cubic-bezier(.17,.67,.83,.67)
+   
+}
+.height_page.active-button {
+    display: none;
+}
+
 #left_1 {
     grid-column: 1;
     grid-row: 1;
