@@ -42,6 +42,10 @@ body::after {
   margin-left: 10%;
   margin-right: 10%;
   transition: transform 1.5s ease-in-out;
+  display: flex;
+}
+#button_refresh {
+  align-items: center;
 }
 
 .height_paragraph {
@@ -50,6 +54,7 @@ body::after {
 #p_height_page {
   grid-column: 1;
   grid-row: 1;
+  margin-top: 0;
 }
 #span_height_page {
   font-weight: bold;
