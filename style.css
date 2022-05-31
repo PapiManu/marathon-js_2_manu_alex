@@ -155,7 +155,7 @@ body::after {
   width: 100vw;
   bottom: 0;
   transition: transform 2s;
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(15px);
 }
 .more {
   background-color: #ffffffc7;
