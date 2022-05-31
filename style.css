@@ -41,6 +41,7 @@ body::after {
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
+  transition: transform 1.5s ease-in-out;
 }
 
 .height_paragraph {
@@ -61,6 +62,7 @@ body::after {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  justify-self: flex-end;
   margin-bottom: 10%;
   margin-left: 10%;
   margin-right: 10%;
@@ -156,7 +158,8 @@ button:hover .img {
   transform: translateY(-100%);
 }
 .height_page.active-button {
-  display: none;
+  /* display: none; */
+  transform: translateX(-100%) ;
 }
 .button-look.active-button {
   margin-bottom: 500px;
