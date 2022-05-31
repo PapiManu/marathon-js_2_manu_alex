@@ -43,6 +43,8 @@ body::after {
   transition: transform 2s ease-in-out;
   transition: transform 1.5s ease-in-out;
   display: flex;
+  position: relative;
+  top: 10%;
 
 }
 #button_refresh {
