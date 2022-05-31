@@ -13,7 +13,6 @@ const dayOfTheWeekTitle = document.querySelector("#right_1");
 const dayOfTheWeek = document.querySelector("#jour_semaine");
 const weekNumberTitle = document.querySelector("#right_2");
 const weekNumber = document.querySelector("#semaine_année");
-
 const more = document.querySelector(".button-look");
 const divMore = document.querySelector(".more-transition");
 const divTop = document.querySelector(".height_page");
