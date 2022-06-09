@@ -92,6 +92,7 @@ function timeSet() {
         logoGently.src = "/assets/desktop/icon-moon.svg";
         cont.style.backgroundImage =
           "url(/assets/desktop/bg-image-daytime.jpg)";
+
           zoneMore.classList.add('more_night')
 
       } else if (hours >= 12 && hours < 17) {
@@ -105,6 +106,7 @@ function timeSet() {
         logoGently.src = "/assets/desktop/icon-moon.svg";
         cont.style.backgroundImage =
           "url(/assets/desktop/bg-image-nighttime.jpg)";
+          zoneMore.classList.add('more_night')
       }
     })
   );
