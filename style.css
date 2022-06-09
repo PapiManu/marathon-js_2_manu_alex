@@ -5,13 +5,14 @@ body {
   font-family: "Inter", sans-serif;
 
   background-image: url(assets/desktop/bg-image-daytime.jpg);
+  backdrop-filter: brightness(50%x);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   overflow: hidden;
 }
-body::after {
+/* body::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.315);
   top: 0;
@@ -20,7 +21,7 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;
-}
+} */
 
 #content {
   height: 100vh;
@@ -167,6 +168,10 @@ body::after {
   display: grid;
   transition: transform ease-in-out;
   padding: 50px 200px 50px 200px;
+}
+.more_night {
+  background-color: #000000c7;
+  color: white;
 }
 
 .img-fleche.active-button {
