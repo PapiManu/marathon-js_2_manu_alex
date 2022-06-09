@@ -163,14 +163,14 @@ body {
   backdrop-filter: blur(15px);
 }
 .more {
-  background-color: #ffffffc7;
+  background-color: #fdfdfdab;
   color: black;
   display: grid;
   transition: transform ease-in-out;
   padding: 50px 200px 50px 200px;
 }
 .more_night {
-  background-color: #000000c7;
+  background-color: #202020ab;
   color: white;
 }
 
