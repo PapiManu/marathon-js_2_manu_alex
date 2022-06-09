@@ -86,7 +86,7 @@ function timeSet() {
       dayOfTheWeek.replaceChildren(dayOfTheWeekContent);
       weekNumber.replaceChildren(weekNumberContent);
 
-      if (hours >= 05 && hours < 12) {
+      if (hours >= 22 && hours < 05) {
         console.log("it is the night");
         messageGently.replaceChildren("GOOD MORNING, IT’S CURRENTLY");
         logoGently.src = "/assets/desktop/icon-moon.svg";
@@ -95,12 +95,13 @@ function timeSet() {
 
           zoneMore.classList.add('more_night')
 
-      } else if (hours >= 12 && hours < 17) {
+      } else if (hours >= 09 && hours < 17) {
         console.log("it is the day");
         messageGently.replaceChildren("GOOD AFTERNOON, IT’S CURRENTLY");
         logoGently.src = "/assets/desktop/icon-sun.svg";
         cont.style.backgroundImage =
           "url(/assets/desktop/bg-image-daytime.jpg)";
+            zoneMore.classList.remove('more_night')
       } else {
         messageGently.replaceChildren("GOOD EVENING, IT’S CURRENTLY");
         logoGently.src = "/assets/desktop/icon-moon.svg";
