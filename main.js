@@ -22,6 +22,7 @@ const refresh = document.querySelector(".button_refresh");
 const messageGently = document.querySelector("#messageGently");
 const logoGently = document.querySelector("#meteo_img > p > img");
 const buttonMore = document.querySelector("#button_more");
+const zoneMore  = document.querySelector('.more')
 
 //hover du bouton more_________________________________________
 
@@ -91,6 +92,8 @@ function timeSet() {
         logoGently.src = "/assets/desktop/icon-moon.svg";
         cont.style.backgroundImage =
           "url(/assets/desktop/bg-image-daytime.jpg)";
+          zoneMore.classList.add('more_night')
+
       } else if (hours >= 12 && hours < 17) {
         console.log("it is the day");
         messageGently.replaceChildren("GOOD AFTERNOON, IT’S CURRENTLY");
